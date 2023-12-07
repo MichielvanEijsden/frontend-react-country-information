@@ -23,8 +23,6 @@ function SearchCountry() {
     }
 const url = ('https://restcountries.com/v3.1/name/'+input)
 
-// const errorMessage = (error.response.status + "page not found")
-
     return (
         <>
             <div className="container">
@@ -37,7 +35,7 @@ const url = ('https://restcountries.com/v3.1/name/'+input)
                         <button id="searchButton" type="button" onClick={searchCountries}> zoek</button>
                     </form>
                 </div>
-                {error &&<p className="error">{error.response.status + " controleer de spelling of probeer het later nog eens"}</p>}
+                {error &&<p className="error">{input + " bestaat niet. Probeer het opnieuw"}</p>}
                 <ul className="searchList">
                     {countryName.map((country) => {
                         return (
