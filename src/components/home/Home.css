@@ -1,0 +1,10 @@
+.welkom{
+    display: flex;
+   justify-content: center;
+    text-align: center;
+    width: 80vw;
+    padding: 60px;
+    font-family: 'Gochi Hand', cursive;
+    font-weight: 500;
+    font-size: 100px;
+}

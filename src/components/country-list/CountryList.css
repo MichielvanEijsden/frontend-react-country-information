@@ -1,0 +1,57 @@
+#worldmap {
+    width: 80vw;
+    border: 2px black solid;
+
+}
+
+.map-text {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    bottom: 40px;
+}
+
+.countryList{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80vw;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+.countryInfo{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin: 10px 0 0 10px;
+}
+.flagAndCountry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.flagAndCountry h2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.flags {
+    height: 3vh;
+    margin-right:10px ;
+}
+.Africa{
+    color: blue;
+}
+.Americas{
+    color: green;
+}
+.Asia{
+    color: red;
+}
+.Europe{
+    color: yellow;
+}
+.Oceania{
+    color: purple;
+}
+.Antarctic {
+    color: aliceblue;
+}
