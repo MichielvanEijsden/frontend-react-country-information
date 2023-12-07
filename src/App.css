@@ -9,68 +9,18 @@ body {
     width: 100vw;
 
 }
-.outercontainer{
-    display: flex;
-    flex-direction: column;
-}
-.innercontainer{
+
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding: 20px;
 }
 
-
-#worldmap {
-    width: 80vw;
-    border: 2px black solid;
-
-}
-
-.map-text {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bold;
-    bottom: 30px;
-}
-
-.countryList{
-    display: flex;
-    /*align-items: center;*/
-    width: 80vw;
-    flex-wrap: wrap;
-    list-style: none;
-    background-color: lightgray;
-}
-.countryInfo{
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    margin: 10px 0 0 10px;
-}
-.flagAndCountry {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-
-.flags {
-    width: 5vh;
-    height: 5vh;
-    margin-right:10px ;
-}
-.blue{
-    color: pink;
-}
-.green{
-    color: green;
-}
-.red{
+.error{
+    padding: 20px;
     color: red;
-}
-.yellow{
-    color: yellow;
-}
-.purple{
-    color: purple;
+    font-size: 20px;
+    font-weight: bolder;
 }
