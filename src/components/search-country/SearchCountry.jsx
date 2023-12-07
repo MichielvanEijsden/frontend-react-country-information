@@ -17,6 +17,7 @@ function SearchCountry() {
         try {
             const search = await axios.get(url)
             setCountryName(search.data)
+            console.log(countryName)
         } catch (e) {
             setError(e)
         }
@@ -45,7 +46,7 @@ const url = ('https://restcountries.com/v3.1/name/'+input)
                                     <img className="flags" src={country.flags.png} alt={country.name.common + "flag"}/>
                                     <h1>{country.name.common}</h1>
                                 </div>
-                                <p>{country.name.common} is situated in and the capital is {country.capital}</p>
+                                <p>{country.name.common} is situated in {country.subregion} and the capital is {country.capital}</p>
                                 <p>It has a population of {populations(country.population)} million people and it
                                     borders with {countryBorders(country.borders)} neighboring countries </p>
                                 <p>Websites can be found on <strong>{country.tld}</strong> domain's</p>
